@@ -1,8 +1,8 @@
 Grab some milk and cookie, let's start the logs
 
-[DEFAULT] - Fri Aug 16 03:16:19 2019 - ceci est une info
-[ ERROR ] - Fri Aug 16 03:16:19 2019 - ceci est une erreur
-[LOADING] - Fri Aug 16 03:16:19 2019 - Game is loading
-	  - Loading windows
-	  - Loading texture
-[LOADING] - Fri Aug 16 03:16:19 2019 - Game succesfully loaded in 0.000053s
+<Mon Aug 19 10:48:56 2019> [DEFAULT][test] ceci est une info
+<Mon Aug 19 10:48:56 2019> [ ERROR ][test] ceci est une erreur
+<Mon Aug 19 10:48:56 2019> [LOADING][Game] start loading
+<Mon Aug 19 10:48:56 2019> 	  - Loading windows
+<Mon Aug 19 10:48:56 2019> 	  - Loading texture
+<Mon Aug 19 10:48:56 2019> [LOADING][Game] succesfully loaded in 0.000094s
