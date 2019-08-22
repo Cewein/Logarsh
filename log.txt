@@ -1,8 +1,8 @@
-Grab some milk and cookie, let's start the logs
+Noodles ready ? you're here for a time!
 
-<Mon Aug 19 10:48:56 2019> [DEFAULT][test] ceci est une info
-<Mon Aug 19 10:48:56 2019> [ ERROR ][test] ceci est une erreur
-<Mon Aug 19 10:48:56 2019> [LOADING][Game] start loading
-<Mon Aug 19 10:48:56 2019> 	  - Loading windows
-<Mon Aug 19 10:48:56 2019> 	  - Loading texture
-<Mon Aug 19 10:48:56 2019> [LOADING][Game] succesfully loaded in 0.000094s
+<Thu Aug 22 18:41:57 2019> [DEFAULT] [test] ceci est une info
+<Thu Aug 22 18:41:57 2019> [ ERROR ] [test] ceci est une erreur
+<Thu Aug 22 18:41:57 2019> [LOADING] [Game] start loading
+<Thu Aug 22 18:41:57 2019> 		  - Loading windows
+<Thu Aug 22 18:41:57 2019> 		  - Loading texture
+<Thu Aug 22 18:41:57 2019> [LOADING] [Game] succesfully loaded in 0.000076s

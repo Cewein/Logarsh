@@ -60,7 +60,7 @@ private:
 	std::fstream file;
 	Log() {
 		file.open("log.txt", std::fstream::out | std::fstream::trunc);
-		file << "Grab some milk and cookie, let's start the logs\n\n";
+		file << "Noodles ready ? you're here for a time!\n\n";
 #if LOGINIT == 1
 		inInit = false;
 #endif
@@ -98,7 +98,7 @@ public:
 		inInit = true;
 		start = std::chrono::system_clock::now();
 		initName = name;
-		data = time() + "[LOADING][" + initName + "] start loading\n";
+		data = time() + "[LOADING] [" + initName + "] start loading\n";
 		write();
 #endif
 	};
@@ -106,7 +106,7 @@ public:
 	void initLog(std::string str)
 	{
 #if LOGINIT == 1
-		data = time() + "\t  - " + str + "\n";
+		data = time() + "\t\t  - " + str + "\n";
 		write();
 #endif
 	};
@@ -117,7 +117,7 @@ public:
 		inInit = false;
 		end = std::chrono::system_clock::now();
 		std::chrono::duration<double> elapsed_seconds = end - start;
-		data = time() + "[LOADING][" + initName + "] succesfully loaded in " + std::to_string(elapsed_seconds.count()) + "s\n";
+		data = time() + "[LOADING] [" + initName + "] succesfully loaded in " + std::to_string(elapsed_seconds.count()) + "s\n";
 		write();
 #endif
 	}
@@ -126,7 +126,7 @@ public:
 	//Write a error in log file, this is a high prority log level
 	void error(std::string name, std::string str) {
 #ifdef LOG_ERROR
-		data = time() + "[ ERROR ][" + name + "] " + str + "\n";
+		data = time() + "[ ERROR ] [" + name + "] " + str + "\n";
 		write();
 #endif
 	};
@@ -134,7 +134,7 @@ public:
 	//write warning in log file, this is a mid prority log level
 	void warning(std::string name, std::string str) {
 #ifdef LOG_WARNING
-		data = time() + "[WARNING][" + name + "] " + str + "\n";
+		data = time() + "[WARNING] [" + name + "] " + str + "\n";
 		write();
 #endif
 	};
@@ -142,7 +142,7 @@ public:
 	//write info in log file, this is the lowest prority log level
 	void info(std::string name, std::string str) {
 #ifdef LOG_INFO
-		data = time() + "[DEFAULT][" + name + "] " + str + "\n";
+		data = time() + "[DEFAULT] [" + name + "] " + str + "\n";
 		write();
 #endif // LOG_INFO
 	};
@@ -150,7 +150,7 @@ public:
 	//Write program crashes in log file, this one cannot be removed
 	void crash(std::string name, std::string str)
 	{
-		data = time() + "[ CRASH ][" + name + "] " + str + "\n";
+		data = time() + "[ CRASH ] [" + name + "] " + str + "\n";
 		write();
 	};
 
