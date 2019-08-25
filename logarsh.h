@@ -1,4 +1,6 @@
 #pragma once
+#pragma warning(disable : 4996)
+
 #include <stdio.h>
 #include <string>
 #include <fstream>
@@ -39,7 +41,6 @@ LOG LVL : 0 is everything and should be only for debugging
 #define SCREEN
 
 #define logger Log::getInstance()
-
 
 class Log
 {
