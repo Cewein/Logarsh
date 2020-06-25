@@ -1,8 +1,32 @@
 Noodles ready ? you're here for a time!
 
-<Thu Aug 22 18:41:57 2019> [DEFAULT] [test] ceci est une info
-<Thu Aug 22 18:41:57 2019> [ ERROR ] [test] ceci est une erreur
-<Thu Aug 22 18:41:57 2019> [LOADING] [Game] start loading
-<Thu Aug 22 18:41:57 2019> 		  - Loading windows
-<Thu Aug 22 18:41:57 2019> 		  - Loading texture
-<Thu Aug 22 18:41:57 2019> [LOADING] [Game] succesfully loaded in 0.000076s
+<25-06-2020 19:16:04:106> [DEFAULT] [test] ceci est une info
+<25-06-2020 19:16:04:109> [ ERROR ] [test] ceci est une erreur
+<25-06-2020 19:16:04:110> [LOADING] [Game] start loading
+<25-06-2020 19:16:04:110> 		  - Loading windows
+<25-06-2020 19:16:04:110> 		  - Loading texture
+<25-06-2020 19:16:04:110> [LOADING] [Game] succesfully loaded in 0.000259s
+<25-06-2020 19:16:04:110> [DEFAULT] [test] ceci est une info
+<25-06-2020 19:16:04:110> [ ERROR ] [test] ceci est une erreur
+<25-06-2020 19:16:04:110> [LOADING] [Game] start loading
+<25-06-2020 19:16:04:111> 		  - Loading windows
+<25-06-2020 19:16:04:111> 		  - Loading texture
+<25-06-2020 19:16:04:111> [LOADING] [Game] succesfully loaded in 0.000275s
+<25-06-2020 19:16:04:111> [DEFAULT] [test] ceci est une info
+<25-06-2020 19:16:04:111> [ ERROR ] [test] ceci est une erreur
+<25-06-2020 19:16:04:111> [LOADING] [Game] start loading
+<25-06-2020 19:16:04:111> 		  - Loading windows
+<25-06-2020 19:16:04:111> 		  - Loading texture
+<25-06-2020 19:16:04:111> [LOADING] [Game] succesfully loaded in 0.000301s
+<25-06-2020 19:16:04:111> [DEFAULT] [test] ceci est une info
+<25-06-2020 19:16:04:112> [ ERROR ] [test] ceci est une erreur
+<25-06-2020 19:16:04:112> [LOADING] [Game] start loading
+<25-06-2020 19:16:04:112> 		  - Loading windows
+<25-06-2020 19:16:04:112> 		  - Loading texture
+<25-06-2020 19:16:04:112> [LOADING] [Game] succesfully loaded in 0.000151s
+<25-06-2020 19:16:04:112> [DEFAULT] [test] ceci est une info
+<25-06-2020 19:16:04:112> [ ERROR ] [test] ceci est une erreur
+<25-06-2020 19:16:04:112> [LOADING] [Game] start loading
+<25-06-2020 19:16:04:112> 		  - Loading windows
+<25-06-2020 19:16:04:112> 		  - Loading texture
+<25-06-2020 19:16:04:112> [LOADING] [Game] succesfully loaded in 0.000191s

@@ -1,6 +1,7 @@
 #pragma once
 #pragma warning(disable : 4996)
 
+#include <iostream>
 #include <stdio.h>
 #include <string>
 #include <fstream>
@@ -40,6 +41,9 @@ LOG LVL : 0 is everything and should be only for debugging
 #define MOUSE
 #define SCREEN
 
+//comment to only write into a file
+#define PRINT_CONSOLE
+
 #define logger Log::getInstance()
 
 class Log
@@ -68,15 +72,22 @@ private:
 	};
 	Log(Log const&);
 	void operator= (Log const&) {};
-	void write() { file << data; }
+	void write() { 
+		file << data;
+#ifdef PRINT_CONSOLE
+		std::cout << data;
+#endif
+	}
 
 	std::string time() {
 
-		std::time_t time = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
-		std::string str = "<";
-		str += std::ctime(&time);
-		str.erase(str.size() - 1);
-		str += "> ";
+		auto now = std::chrono::system_clock::now();
+		std::time_t time = std::chrono::system_clock::to_time_t(now);
+		std::chrono::milliseconds milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(now - std::chrono::time_point_cast<std::chrono::seconds>(now));
+		std::string str(20,'\0');
+		str[0] = '<';
+		std::strftime(&str[1], str.size(), "%d-%m-%Y %H:%M:%S", std::localtime(&time));
+		str += ":" + std::to_string(milliseconds.count()) + "> ";
 		return str;
 	}
 
